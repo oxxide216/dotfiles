@@ -1,6 +1,6 @@
 #!/usr/bin/sh
 
-rm $HOME/dotfiles/home/.config/user-dirs.dirs $HOME/dotfiles/home/.config/user-dirs.locale
+sudo mkdir -p /etc/X11/xorg.conf.d
 sudo ln -s $HOME/dotfiles/etc/X11/xorg.conf.d/40-libinput.conf /etc/X11/xorg.conf.d/40-libinput.conf || true
 ln -s $HOME/dotfiles/home/.gitconfig $HOME/.gitconfig || true
 ln -s $HOME/dotfiles/home/.zshrc $HOME/.zshrc || true
