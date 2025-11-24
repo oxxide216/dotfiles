@@ -1,11 +1,11 @@
 [user]
-	name = vie
-	email = vie.devr@gmail.com
+	name = oxxide216
+	email = oxxide216@gmail.com
 [credential]
 	helper = store
 [color]
 	ui = true
 [core]
-	editor = emacs
+	editor = void
 [credential "*"]
 	helper = store
