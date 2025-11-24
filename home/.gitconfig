@@ -1,11 +1,5 @@
 [user]
-	name = oxxide216
 	email = oxxide216@gmail.com
+	ename = oxxide216
 [credential]
-	helper = store
-[color]
-	ui = true
-[core]
-	editor = void
-[credential "*"]
 	helper = store

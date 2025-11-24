@@ -19,8 +19,9 @@ PS1='%B%F{5}%C%f %F{blue}>%f%b '
 
 # Enable plugins
 IS_ARCH="$(grep Arch /etc/os-release)"
+IS_VOID="$(grep Void /etc/os-release)"
 
-if [ "$IS_ARCH" != "" ]; then
+if [[ "$IS_ARCH" != "" || "$IS_VOID" != "" ]]; then
   source "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
   source "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 else
@@ -39,3 +40,6 @@ alias la="ls -a"
 alias asl="ls -la"
 alias md="mkdir"
 alias rd="rm -r"
+
+alias S="sudo xbps-install"
+alias R="sudo xbps-remove -o"
