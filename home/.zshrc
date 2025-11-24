@@ -18,8 +18,15 @@ setopt HIST_IGNORE_DUPS
 PS1='%B%F{5}%C%f %F{blue}>%f%b '
 
 # Enable plugins
-source "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
-source "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+IS_ARCH="$(grep Arch /etc/os-release)"
+
+if [ "$IS_ARCH" != "" ]; then
+  source "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
+  source "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+else
+  source "/usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+  source "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+fi
 
 # Aliases
 alias ..="cd .."
