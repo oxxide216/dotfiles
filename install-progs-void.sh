@@ -6,7 +6,7 @@ sudo xbps-install xorg xinit picom dunst feh brightnessctl bluez playerctl \
      pipewire wireplumber firefox zsh zsh-autosuggestions zsh-syntax-highlighting \
      telegram-desktop flameshot zip unzip man-pages make dbus elogind \
      libspa-bluetooth libX11-devel libXft-devel libXinerama-devel pam-devel \
-     rtkit || true
+     rtkit gcc pkg-config || true
 
 sudo xbps-install wget
 
@@ -36,7 +36,7 @@ git clone https://git.suckless.org/dmenu $HOME/src/dmenu || true
 cd $HOME/src/dmenu
 make
 sudo make install
-git clone https://codeberg.org/Chrischan/ly $HOME/src/ly || true
+git clone https://codeberg.org/Chrischan/ly $HOME/src/ly --recursive || true
 cd $HOME/src/ly
 make
 sudo make install
