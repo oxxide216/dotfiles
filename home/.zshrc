@@ -17,6 +17,9 @@ setopt HIST_IGNORE_DUPS
 # Customize prompt
 PS1='%B%F{5}%C%f %F{blue}>%f%b '
 
+# Add Unicode support
+export LANG=en_US.utf8
+
 # Enable plugins
 IS_ARCH="$(grep Arch /etc/os-release)"
 IS_VOID="$(grep Void /etc/os-release)"
