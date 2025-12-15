@@ -10,6 +10,8 @@ ln -s $HOME/dotfiles/home/.config/picom.conf $HOME/.config/picom.conf || true
 ln -s $HOME/dotfiles/home/.config/user-dirs.dirs $HOME/.config/user-dirs.dirs || true
 ln -s $HOME/dotfiles/home/.config/user-dirs.locale $HOME/.config/user-dirs.locale || true
 
+sudo ln -s $HOME/dotfiles/etc/environment /etc/environment || true
+
 sudo ln -s /etc/sv/dbus /var/service/
 sudo sv up dbus
 
