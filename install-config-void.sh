@@ -23,11 +23,3 @@ sudo ln -s /etc/sv/ly /var/service/
 sudo ln -s /etc/sv/bluetoothd /var/service/
 sudo usermod -aG bluetooth $USER
 sudo sv start bluetoothd
-
-sudo mkdir -p /etc/pipewire/pipewire.conf.d
-sudo ln -s /usr/share/examples/wireplumber/10-wireplumber.conf /etc/pipewire/pipewire.conf.d/10-wireplumber.conf
-sudo ln -s /usr/share/examples/pipewire/20-pipewire-pulse.conf /etc/pipewire/pipewire.conf.d/20-pipewire-pulse.conf
-
-mkdir -p $HOME/.config/autostart/
-ln -s /usr/share/pipewire/pipewire.desktop $HOME/.config/autostart/
-ln -s /usr/share/wireplumber/wireplumber.desktop $HOME/.config/autostart/

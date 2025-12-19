@@ -3,7 +3,7 @@
 set -xe
 
 sudo xbps-install xorg xinit picom dunst feh brightnessctl bluez playerctl \
-     pipewire wireplumber firefox zsh zsh-autosuggestions zsh-syntax-highlighting \
+     pulseaudio wireplumber firefox zsh zsh-autosuggestions zsh-syntax-highlighting \
      telegram-desktop flameshot zip unzip man-pages make dbus elogind \
      libspa-bluetooth libX11-devel libXft-devel libXinerama-devel pam-devel \
      rtkit gcc pkg-config freetype-devel || true
@@ -40,4 +40,4 @@ git clone https://codeberg.org/Chrischan/ly $HOME/src/ly --recursive || true
 cd $HOME/src/ly
 make
 sudo make install
-sudo make installrunit
+sudo make install runit
