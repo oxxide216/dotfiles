@@ -5,8 +5,8 @@ set -xe
 sudo xbps-install xorg xinit picom dunst feh brightnessctl bluez playerctl \
      pulseaudio firefox zsh zsh-autosuggestions zsh-syntax-highlighting \
      telegram-desktop flameshot zip unzip man-pages make dbus elogind \
-     libspa-bluetooth libX11-devel libXft-devel libXinerama-devel pam-devel \
-     rtkit gcc pkg-config freetype-devel || true
+     libspa-bluetooth libX11-devel libXft-devel libXinerama-devel libXrandr-devel \
+     pam-devel rtkit gcc pkg-config freetype-devel || true
 
 sudo xbps-install wget
 
@@ -36,7 +36,7 @@ cd $HOME/src/slstatus
 make
 sudo make install
 
-git clone https://git.suckless.org/dmenu $HOME/src/dmenu || true
+git clone https://github.com/aario/dmenu $HOME/src/dmenu || true
 cd $HOME/src/dmenu
 make
 sudo make install
@@ -49,7 +49,7 @@ sudo make install installrunit
 
 sudo xbps-install nim
 
-git clone https://codeberg.org/tsoding/boomer $HOME/src/boomer || true
+git clone https://github.com/tsoding/boomer $HOME/src/boomer || true
 cd $HOME/src/boomer
 nimble build
 sudo cp boomer /usr/bin
