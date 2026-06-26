@@ -10,6 +10,9 @@ ln -s $HOME/dotfiles/home/.config/picom.conf $HOME/.config/picom.conf || true
 ln -s $HOME/dotfiles/home/.config/user-dirs.dirs $HOME/.config/user-dirs.dirs || true
 ln -s $HOME/dotfiles/home/.config/user-dirs.locale $HOME/.config/user-dirs.locale || true
 
+ln -s $HOME/dotfiles/home/.emacs.d/init.el $HOME/.emacs.d/init.el || true
+ln -s $HOME/dotfiles/home/.emacs.d/simpc-mode.el $HOME/.emacs.d/simpc-mode.el || true
+
 sudo ln -s $HOME/dotfiles/etc/environment /etc/environment || true
 
 sudo mkdir -p /etc/X11/xorg.conf.d
