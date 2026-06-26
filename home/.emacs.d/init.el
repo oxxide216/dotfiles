@@ -40,8 +40,6 @@
 (setq ido-everywhere t)
 (setq ido-enable-flex-matching t)
 
-(global-set-key (kbd "M-x") 'smex)
-
 (company-mode)
 (add-hook 'after-init-hook 'global-company-mode)
 (setq company-idle-delay 0)
@@ -52,4 +50,5 @@
 
 (load-theme 'doom-vibrant)
 
+(global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "C-x c") 'compile)
