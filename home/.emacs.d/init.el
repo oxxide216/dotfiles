@@ -12,7 +12,7 @@
 
 (setq packages '(ido-completing-read+
  								 smex
-								 corfu
+								 company
 								 magit
 								 dumb-jump
 								 zenburn-theme
@@ -42,10 +42,10 @@
 
 (global-set-key (kbd "M-x") 'smex)
 
-(global-corfu-mode)
-(setq corfu-auto t
-      corfu-auto-delay 0
-      corfu-auto-trigger ".")
+(company-mode)
+(add-hook 'after-init-hook 'global-company-mode)
+(setq company-idle-delay 0)
+(setq company-minimum-prefix-length 2)
 
 (load-file "~/.emacs.d/simpc-mode.el")
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
