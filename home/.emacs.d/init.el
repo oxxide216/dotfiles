@@ -5,23 +5,18 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
-(defun autoremove-packages (packages)
-	(dolist (package package-selected-packages)
-		(unless (member package packages)
-			(package-delete package))))
-
- (defun install-packages (packages)
-    (dolist (package packages)
-      (unless (package-installed-p package)
-	(package-install package))))
+(defun install-packages (packages)
+  (dolist (package packages)
+    (unless (package-installed-p package)
+      (package-install package))))
 
 (setq packages '(ido-completing-read+
  								 smex
+								 corfu
 								 magit
 								 dumb-jump
 								 zenburn-theme
 								 doom-themes))
-(autoremove-packages packages)
 (install-packages packages)
 
 (indent-tabs-mode nil)
@@ -29,6 +24,8 @@
 (setq make-backup-files nil)
 (setq inhibit-splash-screen t)
 (setq initial-scratch-message nil)
+
+(set-face-attribute 'default nil :height 120)
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
@@ -47,7 +44,7 @@
 
 (global-corfu-mode)
 (setq corfu-auto t
-			corfu-auto-delay 0
+      corfu-auto-delay 0
       corfu-auto-trigger ".")
 
 (load-file "~/.emacs.d/simpc-mode.el")
