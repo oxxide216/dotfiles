@@ -19,9 +19,10 @@
 								 doom-themes))
 (install-packages packages)
 
-(indent-tabs-mode nil)
+(setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
 (setq make-backup-files nil)
+(setq auto-save-default nil)
 (setq inhibit-splash-screen t)
 (setq initial-scratch-message nil)
 
