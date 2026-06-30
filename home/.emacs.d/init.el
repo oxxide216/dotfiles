@@ -11,12 +11,13 @@
       (package-install package))))
 
 (setq packages '(ido-completing-read+
- 								 smex
-								 company
-								 magit
-								 dumb-jump
-								 zenburn-theme
-								 doom-themes))
+                 smex
+                 company
+                 magit
+                 dumb-jump
+                 multiple-cursors
+                 zenburn-theme
+                 doom-themes))
 (install-packages packages)
 
 (setq-default indent-tabs-mode nil)
@@ -53,3 +54,5 @@
 
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "C-x c") 'compile)
+(global-set-key (kbd "M-<down>") 'mc/mark-next-like-this)
+(global-set-key (kbd "M-<up>") 'mc/mark-previous-like-this)
