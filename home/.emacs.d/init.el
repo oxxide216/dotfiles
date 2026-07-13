@@ -28,6 +28,14 @@
 (setq inhibit-splash-screen t)
 (setq initial-scratch-message nil)
 
+(defun lnos-activate ()
+  (interactive)
+  (setq-default tab-width 4))
+
+(defun default-activate ()
+  (interactive)
+  (setq-default tab-width 2))
+
 (set-face-attribute 'default nil :height 120)
 
 (menu-bar-mode -1)
