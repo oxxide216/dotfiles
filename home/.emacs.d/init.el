@@ -56,8 +56,8 @@
 (setq company-idle-delay 0)
 (setq company-minimum-prefix-length 2)
 
-(load-file "~/.emacs.d/simpc-mode.el")
-(add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
+;; (load-file "~/.emacs.d/simpc-mode.el")
+;; (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 
 (load-theme 'doom-vibrant)
 
