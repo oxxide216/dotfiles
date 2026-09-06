@@ -17,6 +17,7 @@
                  magit
                  dumb-jump
                  multiple-cursors
+                 markdown-mode
                  zenburn-theme
                  doom-themes))
 (install-packages packages)
