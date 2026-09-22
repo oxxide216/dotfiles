@@ -20,6 +20,7 @@
                  dumb-jump
                  multiple-cursors
                  markdown-mode
+                 glsl-mode
                  zenburn-theme
                  doom-themes))
 (install-packages packages)
