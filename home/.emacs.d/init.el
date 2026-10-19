@@ -70,4 +70,7 @@
 (global-set-key (kbd "M-<down>") 'mc/mark-next-like-this)
 (global-set-key (kbd "M-<up>") 'mc/mark-previous-like-this)
 
+(multiple-cursors-mode)
+(multiple-cursors-mode)
+
 (define-key mc/keymap (kbd "<return>") nil)
