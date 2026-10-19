@@ -69,3 +69,5 @@
 (global-set-key (kbd "C-x c") 'compile)
 (global-set-key (kbd "M-<down>") 'mc/mark-next-like-this)
 (global-set-key (kbd "M-<up>") 'mc/mark-previous-like-this)
+
+(define-key mc/keymap (kbd "<return>") nil)

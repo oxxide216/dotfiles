@@ -46,3 +46,4 @@ alias rd="rm -r"
 
 alias S="sudo xbps-install"
 alias R="sudo xbps-remove -o"
+alias Q="xbps-query"
