@@ -22,7 +22,8 @@
                  markdown-mode
                  glsl-mode
                  zenburn-theme
-                 doom-themes))
+                 doom-themes
+                 horizon-theme))
 (install-packages packages)
 
 (setq-default indent-tabs-mode nil)
@@ -63,7 +64,7 @@
 ;; (load-file "~/.emacs.d/simpc-mode.el")
 ;; (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 
-(load-theme 'doom-vibrant)
+(load-theme 'horizon)
 
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "C-x c") 'compile)
