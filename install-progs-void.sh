@@ -6,7 +6,7 @@ sudo xbps-install xorg xinit picom dunst feh brightnessctl bluez playerctl \
      pulseaudio firefox zsh zsh-autosuggestions zsh-syntax-highlighting \
      flameshot zip unzip man-pages make dbus elogind libspa-bluetooth \
      libX11-devel libXft-devel libXinerama-devel libXrandr-devel \
-     pam-devel rtkit gcc pkg-config freetype-devel || true
+     gcc pkg-config || true
 
 sudo xbps-install wget
 
