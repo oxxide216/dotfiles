@@ -6,7 +6,7 @@ sudo xbps-install xorg xinit picom dunst feh brightnessctl bluez playerctl \
      pulseaudio firefox zsh zsh-autosuggestions zsh-syntax-highlighting \
      flameshot zip unzip man-pages make dbus elogind libspa-bluetooth \
      libX11-devel libXft-devel libXinerama-devel libXrandr-devel \
-     gcc pkg-config || true
+     pam-devel gcc pkg-config || true
 
 sudo xbps-install wget
 
@@ -41,17 +41,8 @@ cd $HOME/src/dmenu
 make
 sudo make install
 
-git clone https://codeberg.org/Chrischan/ly $HOME/src/ly --recursive || true
+git clone https://github.com/oxxide216/ly $HOME/src/ly --recursive || true
 cd $HOME/src/ly
 make
 sudo make install
 sudo make install installrunit
-
-sudo xbps-install nim
-
-git clone https://github.com/tsoding/boomer $HOME/src/boomer || true
-cd $HOME/src/boomer
-nimble build
-sudo cp boomer /usr/bin
-
-sudo xbps-remove nim

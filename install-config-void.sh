@@ -10,6 +10,7 @@ ln -s $HOME/dotfiles/home/.config/picom.conf $HOME/.config/picom.conf || true
 ln -s $HOME/dotfiles/home/.config/user-dirs.dirs $HOME/.config/user-dirs.dirs || true
 ln -s $HOME/dotfiles/home/.config/user-dirs.locale $HOME/.config/user-dirs.locale || true
 
+mkdir $HOME/.emacs.d
 ln -s $HOME/dotfiles/home/.emacs.d/init.el $HOME/.emacs.d/init.el || true
 ln -s $HOME/dotfiles/home/.emacs.d/simpc-mode.el $HOME/.emacs.d/simpc-mode.el || true
 
