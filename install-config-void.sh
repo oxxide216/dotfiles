@@ -20,6 +20,10 @@ sudo mkdir -p /etc/X11/xorg.conf.d
 sudo ln -s $HOME/dotfiles/etc/X11/xorg.conf.d/30-touchpad.conf \
            /etc/X11/xorg.conf.d/30-touchpad.conf || true
 
+sudo mkdir -p /etc/tor /etc/torrc.d
+sudo ln -s $HOME/dotfiles/etc/tor/torrc /etc/tor/torrc || true
+sudo ln -s $HOME/dotfiles/etc/torrc.d/torrc.conf /etc/torrc.d/torrc.conf || true
+
 sudo ln -s /etc/sv/dbus /var/service/
 sudo sv up dbus
 
