@@ -2,6 +2,8 @@
 
 mkdir -p $HOME/.config
 
+ln -s $HOME/dotfiles/run-me.sh $HOME/run-me.sh || true
+
 ln -s $HOME/dotfiles/home/.zshrc $HOME/.zshrc || true
 ln -s $HOME/dotfiles/home/.xinitrc $HOME/.xinitrc || true
 ln -s $HOME/dotfiles/home/.config/dunst $HOME/.config/dunst || true
